@@ -21,3 +21,4 @@ Link do repositório do curso: https://github.com/roger-melo-treinamentos/curso-
 
 Ps: se você não conseguiu fazer tudo o que foi pedido acima, abra a issue mesmo assim =)
 */
+const correctAnswers = ['B', 'B', 'B', 'B']
