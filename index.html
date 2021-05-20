@@ -7,35 +7,87 @@
     <title>Quiz de entretenimento</title>
 </head>
 <body>
-    <div class="container">
-        <p class="lead font-weight-normal">1. "O Mal Disposto" é o nome dado para o filme:</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="inputQuestion1" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-            Default radio
-            </label>
+    <div class="p-3 mb-0 bg-warning text-white text-center">
+        <div class="container">
+          <h2 class="text-light display-3 my-4">Quiz</h2>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="inputQuestion1" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-            Default checked radio
-            </label>
+      </div>
+    
+      <div class="quiz py-4 bg-dark">
+        <div class="container">
+          <h2 class="my-5 text-white">Você consegue responder essas perguntas sobre filmes?</h2>
+    
+          <form class="quiz-form text-light">
+            <div class="my-5">
+              <p class="lead font-weight-normal">1. O filme 007 Contra Spectre começa em qual país?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="A" checked>
+                  Estados Unidos
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="B">
+                  México
+                </label>
+              </div>
+            </div>
+    
+            <div class="my-5">
+              <p class="lead font-weight-normal">2. Em "Os vingadores: Guerra Infinita 4", qual a cor da joia do espaço?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="A" checked>
+                  Roxa
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="B">
+                  Azul
+                </label>
+              </div>
+            </div>
+    
+            <div class="my-5">
+              <p class="lead font-weight-normal">3. Quem dirigiu as trilogias do Senhor dos Anéis?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="A" checked>
+                  Steven Zeitchik
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="B">
+                  Peter Jackson
+                </label>
+              </div>
+            </div>
+    
+            <div class="my-5">
+              <p class="lead font-weight-normal">4. Quem era o capitão pirata do filme "Piratas do Caribe e a Maldição do Pérola Negra"?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="A" checked>
+                  Will Turner
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="B">
+                  Jack Sparrow
+                </label>
+              </div>
+            </div>
+            
+            <div class="text-center">
+              <button class="btn bg-primary text-light">Enviar</button>
+            </div>
+          </form>
         </div>
     </div>
-    <div class="container">
-        <p class="lead font-weight-normal">1. "O Mal Disposto" é o nome dado para o filme:</p>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="inputQuestion2" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-            Default radio
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="inputQuestion2" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-            Default checked radio
-            </label>
-        </div>
-    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
