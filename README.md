@@ -16,11 +16,9 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
           <h2 class="text-light display-3 my-4">Quiz</h2>
         </div>
       </div>
-    
       <div class="quiz py-4 bg-dark">
         <div class="container">
           <h2 class="my-5 text-white">Você consegue responder essas perguntas sobre conhecimentos gerais?</h2>
-    
           <form class="quiz-form text-light">
             <div class="my-5">
               <p class="lead font-weight-normal">1. De quem é a famosa frase “Penso, logo existo”?</p>
@@ -37,7 +35,6 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                 </label>
               </div>
             </div>
-    
             <div class="my-5">
               <p class="lead font-weight-normal">2. Quem foi o primeiro homem a pisar na Lua? Em que ano aconteceu?</p>
               <div class="form-check my-2 text-white-50">
@@ -53,7 +50,6 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                 </label>
               </div>
             </div>
-    
             <div class="my-5">
               <p class="lead font-weight-normal">3. Quantos graus são necessários para que dois ângulos sejam complementares?</p>
               <div class="form-check my-2 text-white-50">
@@ -69,7 +65,6 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                 </label>
               </div>
             </div>
-    
             <div class="my-5">
               <p class="lead font-weight-normal">4. Qual o maior animal terrestre?</p>
               <div class="form-check my-2 text-white-50">
@@ -85,7 +80,6 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                 </label>
               </div>
             </div>
-
             <div class="my-5">
               <p class="lead font-weight-normal">5. Qual a montanha mais alta do Brasil?</p>
               <div class="form-check my-2 text-white-50">
@@ -101,15 +95,12 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                 </label>
               </div>
             </div>
-            
             <div class="text-center">
               <button class="btn bg-primary text-light">Enviar</button>
             </div>
-
             <div class="popup-wrapper">
               <div class="popup">
                   <div class="popup-close">x</div>
-      
                   <div class="popup-content">
                       <h2>Resultado</h2>
                       <p class="paragraphFeedback"></p>
@@ -123,6 +114,7 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
     <script src="./app.js"></script>
 </body>
 </html>
+
 
 ## :Tecnologias
 
