@@ -1,2 +1,123 @@
-# Quiz-Interativo
+# Sobre o Quiz-Interativo
 Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de entretenimento</title>
+</head>
+<body>
+    <div class="p-3 mb-0 bg-warning text-white text-center">
+        <div class="container">
+          <h2 class="text-light display-3 my-4">Quiz</h2>
+        </div>
+      </div>
+      <div class="quiz py-4 bg-dark">
+        <div class="container">
+          <h2 class="my-5 text-white">Você consegue responder essas perguntas sobre conhecimentos gerais?</h2>
+          <form class="quiz-form text-light">
+            <div class="my-5">
+              <p class="lead font-weight-normal">1. De quem é a famosa frase “Penso, logo existo”?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="A" checked>
+                  Sócrates
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="B">
+                  Descartes
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">2. Quem foi o primeiro homem a pisar na Lua? Em que ano aconteceu?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="A" checked>
+                  Charles Duke, em 1971.
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="B">
+                  Neil Armstrong, em 1969.
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">3. Quantos graus são necessários para que dois ângulos sejam complementares?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="A" checked>
+                  45
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="B">
+                  90
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">4. Qual o maior animal terrestre?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="A" checked>
+                  Baleia Azul
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="B">
+                  Elefante Africano
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">5. Qual a montanha mais alta do Brasil?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="A" checked>
+                  Pico da Neblina
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="B">
+                  Pico da Bandeira
+                </label>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn bg-primary text-light">Enviar</button>
+            </div>
+            <div class="popup-wrapper">
+              <div class="popup">
+                  <div class="popup-close">x</div>
+                  <div class="popup-content">
+                      <h2>Resultado</h2>
+                      <p class="paragraphFeedback"></p>
+                      <a class="popup-link" href="index.html">Ok</a>    
+                  </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+## :Tecnologias
+
+-  [HTML](https://html.com/)
+-  [JavaScript](https://www.javascript.com/)
+-  [CSS](http://css.com/)
