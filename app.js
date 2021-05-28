@@ -3,12 +3,30 @@ const button = document.querySelector('.btn')
 const scorePopup = document.querySelector('.popup-wrapper')
 const paragraphFeedback = document.querySelector('.paragraphFeedback')
 
-const correctAnswers = ['B', 'B', 'B', 'B', 'A']
+const correctAnswers = ['B', 'B', 'D', 'C', 'A']
+
+const shouldClosePopup = (classNames, clickedElementClassName) => classNames.some(className => clickedElementClassName === className)
+
+const rightAnswersFromUser = userAnswers => {
+    let rightAnswers = 0
+    
+    userAnswers.forEach((answer, index) => {
+        if (answer === correctAnswers[index]) {
+            rightAnswers++
+        }
+    })
+    return rightAnswers
+} 
+
+const showScorePopup = (rightAnswers, totalQuestions) => {
+    const feedbackQuizMessage = `Você acertou ${rightAnswers} de ${totalQuestions} perguntas!`
+    paragraphFeedback.textContent = feedbackQuizMessage
+    scorePopup.style.display = 'block'
+}
 
 const handleFeedbackQuiz = event => {
     event.preventDefault()
 
-    let rightAnswers = 0
     const userAnswers = [   
         form.inputQuestion1.value,
         form.inputQuestion2.value,
@@ -17,23 +35,17 @@ const handleFeedbackQuiz = event => {
         form.inputQuestion5.value
     ]
 
-    userAnswers.forEach((answer, index) => {
-        if (answer === correctAnswers[index]) {
-            rightAnswers++
-        }
-    })
-    
-    const feedbackQuizMessage = `Você acertou ${rightAnswers} de ${userAnswers.length} perguntas!`
-    paragraphFeedback.textContent = feedbackQuizMessage
-    scorePopup.style.display = 'block' 
+    const rightAnswers = rightAnswersFromUser(userAnswers)
+    showScorePopup(rightAnswers, userAnswers.length) 
 }
 
 const handlePopupClose = event => { 
     const classNames = ['popup-wrapper', 'popup-close', 'popup-link']
     const clickedElementClassName = event.target.classList.value
-    const shouldClosePopup = classNames.some(className => clickedElementClassName === className)
+    
+    const closePopup = shouldClosePopup(classNames, clickedElementClassName)
 
-    if (shouldClosePopup) {  
+    if (closePopup) {  
         scorePopup.style.display = 'none'  
     }
 }

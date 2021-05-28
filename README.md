@@ -1,6 +1,3 @@
-# Sobre o Quiz-Interativo
-Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +12,7 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
         <div class="container">
           <h2 class="text-light display-3 my-4">Quiz</h2>
         </div>
-      </div>
+      </div>   
       <div class="quiz py-4 bg-dark">
         <div class="container">
           <h2 class="my-5 text-white">Você consegue responder essas perguntas sobre conhecimentos gerais?</h2>
@@ -34,6 +31,18 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                   Descartes
                 </label>
               </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="C">
+                  Francis Bacon
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="D">
+                  Galileu Galilei
+                </label>
+              </div>
             </div>
             <div class="my-5">
               <p class="lead font-weight-normal">2. Quem foi o primeiro homem a pisar na Lua? Em que ano aconteceu?</p>
@@ -49,6 +58,18 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                   Neil Armstrong, em 1969.
                 </label>
               </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="C">
+                  Buzz Aldrin, em 1969.
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="D">
+                  Charles Conrad, em 1969.
+                </label>
+              </div>
             </div>
             <div class="my-5">
               <p class="lead font-weight-normal">3. Quantos graus são necessários para que dois ângulos sejam complementares?</p>
@@ -61,6 +82,18 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
               <div class="form-check my-2 text-white-50">
                 <label class="form-check-label">
                   <input type="radio" name="inputQuestion3" value="B">
+                  60
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="C">
+                  30
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="D">
                   90
                 </label>
               </div>
@@ -76,7 +109,19 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
               <div class="form-check my-2 text-white-50">
                 <label class="form-check-label">
                   <input type="radio" name="inputQuestion4" value="B">
+                  Girafa
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="C">
                   Elefante Africano
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="D">
+                  Urso
                 </label>
               </div>
             </div>
@@ -94,17 +139,29 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
                   Pico da Bandeira
                 </label>
               </div>
-            </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="C">
+                  Pico Paraná
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="D">
+                  Pico Maior de Friburgo
+                </label>
+              </div>
+            </div>     
             <div class="text-center">
               <button class="btn bg-primary text-light">Enviar</button>
             </div>
             <div class="popup-wrapper">
               <div class="popup">
-                  <div class="popup-close">x</div>
+                  <div class="popup-close">x</div>  
                   <div class="popup-content">
                       <h2>Resultado</h2>
                       <p class="paragraphFeedback"></p>
-                      <a class="popup-link" href="index.html">Ok</a>    
+                      <a class="popup-link" href="#">Ok</a>    
                   </div> 
               </div>
             </div>
@@ -114,10 +171,3 @@ Desenvolvimento de um Quiz utilizando JavaScript puro com Bootstrap para o CSS
     <script src="./app.js"></script>
 </body>
 </html>
-
-
-## :Tecnologias
-
--  [HTML](https://html.com/)
--  [JavaScript](https://www.javascript.com/)
--  [CSS](http://css.com/)
