@@ -7,6 +7,17 @@ const correctAnswers = ['B', 'B', 'D', 'C', 'A']
 
 const shouldClosePopup = (classNames, clickedElementClassName) => classNames.some(className => clickedElementClassName === className)
 
+const getUserAnwers = () => {
+    let userAnswers = []
+
+    correctAnswers.forEach((_, index) => { 
+        const userAnswer = form[`inputQuestion${index + 1}`].value
+        userAnswers.push(userAnswer)
+    })
+
+    return userAnswers
+}
+
 const rightAnswersFromUser = userAnswers => {
     let rightAnswers = 0
     
@@ -27,13 +38,7 @@ const showScorePopup = (rightAnswers, totalQuestions) => {
 const handleFeedbackQuiz = event => {
     event.preventDefault()
 
-    const userAnswers = [   
-        form.inputQuestion1.value,
-        form.inputQuestion2.value,
-        form.inputQuestion3.value,
-        form.inputQuestion4.value,
-        form.inputQuestion5.value
-    ]
+    const userAnswers = getUserAnwers()
 
     const rightAnswers = rightAnswersFromUser(userAnswers)
     showScorePopup(rightAnswers, userAnswers.length) 
@@ -48,6 +53,12 @@ const handlePopupClose = event => {
     if (closePopup) {  
         scorePopup.style.display = 'none'  
     }
+
+    scrollTo({
+        top: 0, 
+        left: 0,
+        behavior: 'smooth'
+    })
 }
 
 form.addEventListener('submit', handleFeedbackQuiz)

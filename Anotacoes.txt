@@ -1,0 +1,12 @@
+correctAnswers.forEach((_, index) => { //mais eficiente que pegar utilizando o form.inputQuestion1.value
+        //o underscore é para não precisar passar nenhum parâmetro.
+        const userAnswer = form[`inputQuestion${index + 1}`].value
+        userAnswers.push(userAnswer)
+})
+
+const getUserAnwers = [
+	form.inputQuestion1.value,
+	form.inputQuestion2.value,
+	form.inputQuestion3.value,
+	form.inputQuestion4.value	
+]
