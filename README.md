@@ -1,1 +1,168 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cd652266-bf44-48b3-929f-b09a258f1d6c/deploy-status)](https://app.netlify.com/sites/quiz-interativo-conhecimentosgerais/deploys)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Quiz de entretenimento</title>
+</head>
+<body>
+    <div class="p-3 mb-0 bg-warning text-white text-center">
+        <div class="container">
+          <h2 class="text-light display-3 my-4">Quiz</h2>
+        </div>
+      </div>   
+      <div class="quiz py-4 bg-dark">
+        <div class="container">
+          <h2 class="my-5 text-white">Você consegue responder essas perguntas sobre conhecimentos gerais?</h2>
+          <form class="quiz-form text-light">
+            <div class="my-5">
+              <p class="lead font-weight-normal">1. De quem é a famosa frase “Penso, logo existo”?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="A" checked>
+                  Sócrates
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="B">
+                  Descartes
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="C">
+                  Francis Bacon
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion1" value="D">
+                  Galileu Galilei
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">2. Quem foi o primeiro homem a pisar na Lua? Em que ano aconteceu?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="A" checked>
+                  Charles Duke, em 1971.
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="B">
+                  Neil Armstrong, em 1969.
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="C">
+                  Buzz Aldrin, em 1969.
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion2" value="D">
+                  Charles Conrad, em 1969.
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">3. Quantos graus são necessários para que dois ângulos sejam complementares?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="A" checked>
+                  45
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="B">
+                  60
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="C">
+                  30
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion3" value="D">
+                  90
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">4. Qual o maior animal terrestre?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="A" checked>
+                  Baleia Azul
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="B">
+                  Girafa
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="C">
+                  Elefante Africano
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion4" value="D">
+                  Urso
+                </label>
+              </div>
+            </div>
+            <div class="my-5">
+              <p class="lead font-weight-normal">5. Qual a montanha mais alta do Brasil?</p>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="A" checked>
+                  Pico da Neblina
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="B">
+                  Pico da Bandeira
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="C">
+                  Pico Paraná
+                </label>
+              </div>
+              <div class="form-check my-2 text-white-50">
+                <label class="form-check-label">
+                  <input type="radio" name="inputQuestion5" value="D">
+                  Pico Maior de Friburgo
+                </label>
+              </div>
+            </div>     
+            <div class="text-center">
+              <button class="btn bg-primary text-light">Enviar</button>
+            </div>
+            <div class="popup-wrapper">
+              <div class="popup">
+                  <div class="popup-close">x</div>  
+                  <div class="popup-content">
+                      <h2>Resultado</h2>
+                      <p class="paragraphFeedback"></p>
+                      <a class="popup-link" href="#">Ok</a>    
+                  </div> 
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
