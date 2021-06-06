@@ -21,8 +21,10 @@ const getUserAnwers = () => {
 const rightAnswersFromUser = userAnswers => {
     let rightAnswers = 0
     
-    userAnswers.forEach((answer, index) => {
-        if (answer === correctAnswers[index]) {
+    userAnswers.forEach((userAnswer, index) => {
+        const isUserAnswerCorrect = userAnswer === correctAnswers[index]
+        
+        if (isUserAnswerCorrect) {
             rightAnswers++
         }
     })
@@ -52,13 +54,13 @@ const handlePopupClose = event => {
 
     if (closePopup) {  
         scorePopup.style.display = 'none'  
+        
+        scrollTo({
+            top: 0, 
+            left: 0,
+            behavior: 'smooth'
+        })
     }
-
-    scrollTo({
-        top: 0, 
-        left: 0,
-        behavior: 'smooth'
-    })
 }
 
 form.addEventListener('submit', handleFeedbackQuiz)
